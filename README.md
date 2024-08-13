@@ -168,10 +168,3 @@ if you unpacked FERN into that folder. Once you are within this folder, you can 
 ## Citation
 
 Please cite the following publication if you are using FERN in your work:  Florian Erhard, Caroline C. Friedel, Ralf Zimmer, FERN - a Java framework for stochastic simulation and evaluation of reaction networks, BMC Bioinformatics, vol. 9, no. 1, pp. 356, 2008. 
-
-
-## Contact
-
-Caroline Friedel: caroline.friedel@bio.ifi.lmu.de
-
-Florian Erhard: florian.erhard@informatik.uni-regensburg.de
