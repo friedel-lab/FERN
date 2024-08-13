@@ -2,18 +2,26 @@
 ---------------------------
 
 doc/javadoc/		contains the complete javadoc of fern
+
 doc/slides.pdf 		presentation about FERN's structure / features
+
 doc/guide.pdf  		user guide
+
 doc/cytoscape.pdf	documentation / tutorial for the Cytoscape plugin
 
 src/ 			FERN's source code
+
 examples/ 		example FernML and SBML files
 
 colt.jar		necessary library (*)
+
 concurrent.jar		necessary library (*)
+
 jdom.jar		necessary library
+
 fern.jar 		complete FERN library
-start* 			examples of running FERN's command line class under different environments (see section 5)
+
+start* 			examples of running FERN's command line class under different environments (see below)
 
 (*) Copyright for the Colt package (\url{http://dsd.lbl.gov/~hoschek/colt/}):
 Copyright (c) 1999 CERN - European Organization for Nuclear Research.
@@ -23,13 +31,14 @@ Permission to use, copy, modify, distribute and sell this software and its docum
 # Availability and Requirements
 --------------------------------
 FERN is freely available under the GNU Lesser General Public License (LGPL) for academic users. 
+
 For non-academic use a license is required.
 
 FERN requires Java 5.0 or higher. If you don't have an up-to-date Java environment on your computer, we highly recommend to update to the newest version (\url{http://java.sun.com/javase/downloads/index.jsp}). You can discover you Java version by tying
 
-	java -version
+	`java -version`
 
-into a console (or the MSDOS command line if you are running windows - see also section 10)
+into a console (or the MSDOS command line if you are running windows - see also below)
 
 It additionally requires the Colt package (\url{http://dsd.lbl.gov/~hoschek/colt/}) and JDOM (\url{http://www.jdom.org/}) (see section 3) . 
 
@@ -60,13 +69,14 @@ download libSBML from
 Running windows, you simply have to download the precompiled package and copy the files of the subdirectory
 bindings/java to your FERN directory. Under linux/unix, you have to compile from source
 which is well documented at the libsbml website (http://sbml.org/software/libsbml/docs/cpp-api/libsbml-installation.html).
-Do not forget to set the --with-java flag for configure and to set the LD LIBRARY PATH variable.
+
+Do not forget to set the `--with-java` flag for configure and to set the LD LIBRARY PATH variable.
 To shorten things up:
 
-./configure --prefix=<Install directory> --with-java 
-make 
-make install
-export LD_LIBRARY_PATH=$LD_LIBRARY_PATH:<Install directory>/lib/
+	./configure --prefix=<Install directory> --with-java
+	make 
+	make install
+	export LD_LIBRARY_PATH=$LD_LIBRARY_PATH:<Install directory>/lib/
 
 Furthermore, you have to include the libsbmlj.jar file (contained in <Install directory>/lib/) 
 into your classpath. In the precompiled package for Windows the file is name sbmlj.jar.
@@ -104,11 +114,11 @@ To test if your system is configured correctly just type in the fern directory
 (for unix/linux systems, for windows or cygwin/windows use the 
 corresponding start.bat and start_cygwin.sh scripts):
 
-start.sh examples/mm.xml 10 0.5 -n 50 
+	start.sh examples/mm.xml 10 0.5 -n 50 
 
-for FernML and 
+	for FernML and 
 
-start.sh examples/mm_sbml.xml 10 0.5 -n 50
+	start.sh examples/mm_sbml.xml 10 0.5 -n 50
 
 for SBML.
 
@@ -154,3 +164,15 @@ and press Enter. Now you can navigate to you FERN installation by
 	cd "C:\Program Files\fern"
 
 if you unpacked FERN into that folder. Once you are within this folder, you can start FERN by using the start.bat as described above.
+
+# Citation
+-----------------
+
+Please cite the following publication if you are using FERN in your work:  Florian Erhard, Caroline C. Friedel, Ralf Zimmer, FERN - a Java framework for stochastic simulation and evaluation of reaction networks, BMC Bioinformatics, vol. 9, no. 1, pp. 356, 2008. 
+
+
+# Contact
+----------------
+
+Caroline Friedel: caroline.friedel@bio.ifi.lmu.de
+Florian Erhard: florian.erhard@informatik.uni-regensburg.de
