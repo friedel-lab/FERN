@@ -1,5 +1,5 @@
-# Included folders / files
----------------------------
+## Included folders / files
+----------
 
 doc/javadoc/		contains the complete javadoc of fern
 
@@ -28,8 +28,8 @@ Copyright (c) 1999 CERN - European Organization for Nuclear Research.
 
 Permission to use, copy, modify, distribute and sell this software and its documentation for any purpose is hereby granted without fee, provided that the above copyright notice appear in all copies and that both that copyright notice and this permission notice appear in supporting documentation. CERN makes no representations about the suitability of this software for any purpose. It is provided "as is" without expressed or implied warranty. 
 
-# Availability and Requirements
---------------------------------
+## Availability and Requirements
+---------------
 FERN is freely available under the GNU Lesser General Public License (LGPL) for academic users. 
 
 For non-academic use a license is required.
@@ -45,8 +45,8 @@ It additionally requires the Colt package (\url{http://dsd.lbl.gov/~hoschek/colt
 Optional are libSBML (\url{http://www.sbml.org/software/libsbml/}) for SBML version 2 level 1-3 support (see section 4), Cytoscape 2.4.0 or higher (\url{http://www.cytoscape.org/}) to use the plugin (see section 8) and gnuplot (see section 9).
 
 
-# Using FERN in your project
------------------------------
+## Using FERN in your project
+------------
 
 Just include the four jar files (already included in the FERN package)
 
@@ -58,7 +58,7 @@ Just include the four jar files (already included in the FERN package)
 into your classpath. 
 
 
-# SBML support
+## SBML support
 ---------------
 
 At the moment, SBML version 2 level 1 - 3 are supported. If you want to use the SBML reader,
@@ -81,8 +81,8 @@ To shorten things up:
 Furthermore, you have to include the libsbmlj.jar file (contained in <Install directory>/lib/) 
 into your classpath. In the precompiled package for Windows the file is name sbmlj.jar.
 
-# Using the start scripts
---------------------------
+## Using the start scripts
+---------
 
 Depending on your operating environment you can start the command line class "Start" by starting one of
 
@@ -98,8 +98,8 @@ The start scripts can be used both with FernML and SBML networks. Example networ
 formats are given in the examples directory.
 
 
-# Discovering the examples
----------------------------
+## Discovering the examples
+----------
 The best way of starting with FERN is to import the src directory into your Java IDE,
 include the colt.jar, concurrent.jar and jdom.jar (see below) files and then run one of the examples
 (sufficient for FernML, for SBML support libSBML is required (see section 4)).
@@ -123,8 +123,8 @@ corresponding start.bat and start_cygwin.sh scripts):
 for SBML.
 
 
-# Compile Errors regarding SBML/Cytoscape
-------------------------------------------
+## Compile Errors regarding SBML/Cytoscape
+--------
 Without libsbml installed and the Cytoscape package within the classpath, 
 you will get compile errors in the packages fern.network.sbml and fern.cytoscape. 
 Other classes should not be affected. If you want to get rid of the errors or the 
@@ -134,8 +134,8 @@ project (see section 8).
 
 
 
-# Using the Cytoscape/CellDesigner plugin
-------------------------------------------
+## Using the Cytoscape/CellDesigner plugin
+--------
 
 Cytoscape: Simply copy the fern.jar into the cytoscape/plugin folder and start Cytoscape (available at http://www.cytoscape.org/). You will find FERN in the
 plugins menu. The Cytoscape plugin requires Cytoscape version 2.4.0 or higher.
@@ -143,15 +143,15 @@ plugins menu. The Cytoscape plugin requires Cytoscape version 2.4.0 or higher.
 CellDesigner: Make sure to download the newest version of CellDesigner from http://www.systems-biology.org/cd/ (at least version 4.0beta). The current version of CellDesigner (4.0beta) is not as flexible as Cytoscape regarding plugins, so there is some more work to do. Once again you have to copy fern.jar into the CellDesigner/plugin folder and additionally colt.jar, concurrent.jar and jdom.jar into the CellDesigner/lib folder. You have to replace the original start script by the one shipped with fern, since the Classpath of the original one is hard coded and would not include the three new required jars. You can start the plugin by using the plugin menu of CellDesigner.
 
 
-# Gnuplot
+## Gnuplot
 ----------
 
 If you want to use the plot method of the GnuPlot class, make sure the program gnuplot is in the path environment variable (just try to invoke it from command line).
 
 
 
-# Windows users
------------------
+## Windows users
+
 
 Since windows users are usually not familiar with a command line console, here some first steps:
 
@@ -165,14 +165,14 @@ and press Enter. Now you can navigate to you FERN installation by
 
 if you unpacked FERN into that folder. Once you are within this folder, you can start FERN by using the start.bat as described above.
 
-# Citation
------------------
+## Citation
+
 
 Please cite the following publication if you are using FERN in your work:  Florian Erhard, Caroline C. Friedel, Ralf Zimmer, FERN - a Java framework for stochastic simulation and evaluation of reaction networks, BMC Bioinformatics, vol. 9, no. 1, pp. 356, 2008. 
 
 
-# Contact
-----------------
+## Contact
+
 
 Caroline Friedel: caroline.friedel@bio.ifi.lmu.de
 Florian Erhard: florian.erhard@informatik.uni-regensburg.de
