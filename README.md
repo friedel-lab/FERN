@@ -173,4 +173,5 @@ Please cite the following publication if you are using FERN in your work:  Flori
 ## Contact
 
 Caroline Friedel: caroline.friedel@bio.ifi.lmu.de
+
 Florian Erhard: florian.erhard@informatik.uni-regensburg.de
